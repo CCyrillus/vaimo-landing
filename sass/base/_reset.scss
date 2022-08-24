@@ -8,16 +8,32 @@
 h1,
 h2,
 h3,
-p{
+p {
   font-size: inherit;
 }
 
-input, button {
+input,
+button {
   border: none;
   font-family: inherit;
   font-size: inherit;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+.burger-menu {
+  display: none;
+
+  span {
+    transition: all 0.3s ease-in-out;
+  }
 }

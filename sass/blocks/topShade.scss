@@ -1,0 +1,51 @@
+.topShade {
+  width: 100%;
+  height: 24px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+
+  p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #000000;
+  }
+
+  &-location {
+    line-height: 15px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+
+    &__png {
+      margin-right: 6px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: #005ecc;
+        box-shadow: 0 5px 5px grey;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 10px;
+      letter-spacing: 0.0833333px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+  @include onDesktop{
+    display: none;
+  }
+}
