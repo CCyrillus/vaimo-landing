@@ -1,0 +1,88 @@
+.subscribe {
+  width: 100%;
+  padding: 32px 0;
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-content {
+    width: 439px;
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.872727px;
+      margin-bottom: 14px;
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 100%;
+        border: 1px solid #e1e0e1;
+        border-radius: 3px;
+        padding: 8px 11px 7px 11px;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        max-width: 334px;
+        outline: none;
+
+        &::placeholder {
+          color: #4a4a4a;
+        }
+      }
+
+      button {
+        max-width: 94px;
+        width: 100%;
+        background: #000000;
+        border: 1px solid #000000;
+        padding: 5px 20.5px 7px 20.1px;
+        border-radius: 3px;
+        height: 33px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          color: #000000;
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  @include onDesktop {
+    .subscribe {
+      padding: 24px 16px;
+      &-content {
+        &__form {
+          input {
+            width: 68.4%;
+          }
+          button {
+            max-width: 100%;
+            width: 29.27%;
+          }
+        }
+      }
+    }
+  }
+}

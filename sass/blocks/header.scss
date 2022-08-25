@@ -308,6 +308,12 @@
           }
         }
       }
+      .header-search {
+        svg {
+          fill: #000000;
+          transition: all 0.3s ease-in-out;
+        }
+      }
     }
 
     .header-bottom {
@@ -331,20 +337,22 @@
   @include onDesktop {
     .header-search {
       display: block;
-      background-color: brown;
-      
-      .close {
+
+      svg {
+        &.close {
           display: none;
         }
+      }
 
-      &:active {
-        background-color: chartreuse;
-        .close {
-          display: block;
-        }
+      &.active {
+        svg {
+          &.close {
+            display: block;
+          }
 
-        svg:not(.close) {
-          display: none;
+          &:not(.close) {
+            display: none;
+          }
         }
       }
     }
@@ -414,14 +422,6 @@
       &-bottom {
         nav {
           display: none;
-        }
-      }
-
-      &.active {
-        .header-search {
-          svg {
-            fill: #000000;
-          }
         }
       }
     }
