@@ -5,7 +5,7 @@
   transition: all 0.3s ease-in-out;
   z-index: 5;
 
-  .burger-menu {
+  .header-top__mobile {
     display: none;
 
     span {
@@ -183,6 +183,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
 
       .menu {
         list-style: none;
@@ -190,11 +191,12 @@
         margin: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
+        margin-right: 30px;
 
         &__item {
-          margin-right: 31px;
-
           a {
+            margin-right: 32px;
             font-weight: 600;
             font-size: 13px;
             line-height: 19px;
@@ -356,6 +358,7 @@
         }
       }
     }
+
     .burger-menu {
       display: flex;
       flex-direction: column;

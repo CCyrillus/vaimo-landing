@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'onDesktop'.
-        on line 339 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'
-        from line 339 of D:\a1_rms\landing-aurora\sass\blocks\header.scss
+        on line 94 of D:\a1_rms\landing-aurora\sass\blocks\footer.scss, in `onDesktop'
+        from line 94 of D:\a1_rms\landing-aurora\sass\blocks\footer.scss
 
-334:         }
-335:       }
-336:     }
-337:   }
-338: 
-339:   @include onDesktop {
-340:     .header-search {
-341:       display: block;
-342: 
-343:       svg {
-344:         &.close {
+89:     line-height: 13px;
+90:     text-align: center;
+91:     letter-spacing: 0.5px;
+92:   }
+93: 
+94:   @include onDesktop {
+95:     .footer {
+96:       padding: 16px 16px 22px 16px;
+97:       .wrap {
+98:         flex-direction: column;
+99:         margin-bottom: 24px;
 
 Backtrace:
-D:\a1_rms\landing-aurora\sass\blocks\header.scss:339:in `onDesktop'
-D:\a1_rms\landing-aurora\sass\blocks\header.scss:339
+D:\a1_rms\landing-aurora\sass\blocks\footer.scss:94:in `onDesktop'
+D:\a1_rms\landing-aurora\sass\blocks\footer.scss:94
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'onDesktop'.\A         on line 339 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'\A         from line 339 of D:\a1_rms\landing-aurora\sass\blocks\header.scss\A \A 334:         }\A 335:       }\A 336:     }\A 337:   }\A 338: \A 339:   @include onDesktop {\A 340:     .header-search {\A 341:       display: block;\A 342: \A 343:       svg {\A 344:         &.close {"; }
+  content: "Error: Undefined mixin 'onDesktop'.\A         on line 94 of D:\a1_rms\landing-aurora\sass\blocks\footer.scss, in `onDesktop'\A         from line 94 of D:\a1_rms\landing-aurora\sass\blocks\footer.scss\A \A 89:     line-height: 13px;\A 90:     text-align: center;\A 91:     letter-spacing: 0.5px;\A 92:   }\A 93: \A 94:   @include onDesktop {\A 95:     .footer {\A 96:       padding: 16px 16px 22px 16px;\A 97:       .wrap {\A 98:         flex-direction: column;\A 99:         margin-bottom: 24px;"; }
