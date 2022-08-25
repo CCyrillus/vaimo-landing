@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'onDesktop'.
-        on line 330 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'
-        from line 330 of D:\a1_rms\landing-aurora\sass\blocks\header.scss
+        on line 331 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'
+        from line 331 of D:\a1_rms\landing-aurora\sass\blocks\header.scss
 
-325:         }
-326:       }
-327:     }
-328:   }
-329: 
-330:   @include onDesktop {
-331:     .header-search {
-332:       display: block;
-333: 
-334:       svg {
-335:         &.crest {
+326:         }
+327:       }
+328:     }
+329:   }
+330: 
+331:   @include onDesktop {
+332:     .header-search {
+333:       display: block;
+334:       background-color: brown;
+335:       
+336:       .close {
 
 Backtrace:
-D:\a1_rms\landing-aurora\sass\blocks\header.scss:330:in `onDesktop'
-D:\a1_rms\landing-aurora\sass\blocks\header.scss:330
+D:\a1_rms\landing-aurora\sass\blocks\header.scss:331:in `onDesktop'
+D:\a1_rms\landing-aurora\sass\blocks\header.scss:331
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'onDesktop'.\A         on line 330 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'\A         from line 330 of D:\a1_rms\landing-aurora\sass\blocks\header.scss\A \A 325:         }\A 326:       }\A 327:     }\A 328:   }\A 329: \A 330:   @include onDesktop {\A 331:     .header-search {\A 332:       display: block;\A 333: \A 334:       svg {\A 335:         &.crest {"; }
+  content: "Error: Undefined mixin 'onDesktop'.\A         on line 331 of D:\a1_rms\landing-aurora\sass\blocks\header.scss, in `onDesktop'\A         from line 331 of D:\a1_rms\landing-aurora\sass\blocks\header.scss\A \A 326:         }\A 327:       }\A 328:     }\A 329:   }\A 330: \A 331:   @include onDesktop {\A 332:     .header-search {\A 333:       display: block;\A 334:       background-color: brown;\A 335:       \A 336:       .close {"; }

@@ -124,8 +124,9 @@
       .auth-buttons {
         margin-right: 18px;
 
-        &__login, &__reg, &__line {
-
+        &__login,
+        &__reg,
+        &__line {
           &:hover {
             color: #000000;
           }
@@ -330,22 +331,20 @@
   @include onDesktop {
     .header-search {
       display: block;
-
-      svg {
-        &.crest {
+      background-color: brown;
+      
+      .close {
           display: none;
         }
-      }
 
-      &.active {
-        svg {
-          &.crest {
-            display: block;
-          }
+      &:active {
+        background-color: chartreuse;
+        .close {
+          display: block;
+        }
 
-          &:not(.crest) {
-            display: none;
-          }
+        svg:not(.close) {
+          display: none;
         }
       }
     }

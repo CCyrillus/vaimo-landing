@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -30,59 +31,91 @@
 
   <header class="header">
     <div class="header-top">
-        <div class="header-top__mobile">
-            <div class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="header-search">
-                <img class="svg" src="./img/Fill1.svg" alt="">
-                <img class="svg crest" src="./img/crest.svg" alt="">
-            </div>
+      <div class="header-top__mobile">
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="header-top__logo">
-            <a href="">Aurora</a>
+        <div class="header-search">
+          <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.33737 0C9.29817 0 11.1417 0.732088 12.5278 2.06084C15.2134 4.63432 15.3792 8.72258 13.0264 11.4835L16.4749 14.789C16.7648 15.0668 16.7648 15.5169 16.4749 15.7947C16.33 15.9337 16.1401 16.0031 15.9503 16.0031C15.7605 16.0031 15.5706 15.9337 15.4257 15.7947L11.9771 12.4892C10.6706 13.5144 9.0489 14.0721 7.33724 14.0721C5.37644 14.0721 3.53288 13.3401 2.14678 12.0113C-0.715576 9.26837 -0.715576 4.8044 2.14678 2.06075C3.53314 0.732106 5.37657 0 7.33737 0ZM3.19617 11.0057C4.30268 12.0663 5.77304 12.6498 7.33741 12.6498C8.90178 12.6498 10.3721 12.0656 11.4786 11.0057C13.762 8.817 13.762 5.25524 11.4786 3.06673C10.3721 2.00681 8.90178 1.42266 7.33741 1.42266C5.77304 1.42266 4.30271 2.00681 3.19617 3.06673C0.912778 5.25595 0.912778 8.81717 3.19617 11.0057Z"
+              fill="white" class="path" />
+          </svg>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="black" xmlns="http://www.w3.org/2000/svg"
+            class="svg close">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.187452 15.8125C0.437387 16.0625 0.842613 16.0625 1.09255 15.8125L8 8.9051L14.9075 15.8125C15.1574 16.0625 15.5626 16.0625 15.8125 15.8125C16.0625 15.5626 16.0625 15.1574 15.8125 14.9075L8.9051 8L15.8125 1.09255C16.0625 0.842613 16.0625 0.437387 15.8125 0.187451C15.5626 -0.0624842 15.1574 -0.0624842 14.9075 0.187451L8 7.0949L1.09255 0.187452C0.842613 -0.0624839 0.437387 -0.0624839 0.187452 0.187452C-0.0624839 0.437387 -0.0624839 0.842613 0.187452 1.09255L7.0949 8L0.187452 14.9075C-0.0624839 15.1574 -0.0624839 15.5626 0.187452 15.8125Z"
+              class="path" />
+          </svg>
         </div>
-        <div class="header-top__search">
-            <form action="">
-                <div class="form-row">
-                    <input type="text" class="form-row__input" id="searchFocus" placeholder="What are you looking for?">
-                    <button type="submit" class="form-row__search">
-                      <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33737 0C9.29817 0 11.1417 0.732088 12.5278 2.06084C15.2134 4.63432 15.3792 8.72258 13.0264 11.4835L16.4749 14.789C16.7648 15.0668 16.7648 15.5169 16.4749 15.7947C16.33 15.9337 16.1401 16.0031 15.9503 16.0031C15.7605 16.0031 15.5706 15.9337 15.4257 15.7947L11.9771 12.4892C10.6706 13.5144 9.0489 14.0721 7.33724 14.0721C5.37644 14.0721 3.53288 13.3401 2.14678 12.0113C-0.715576 9.26837 -0.715576 4.8044 2.14678 2.06075C3.53314 0.732106 5.37657 0 7.33737 0ZM3.19617 11.0057C4.30268 12.0663 5.77304 12.6498 7.33741 12.6498C8.90178 12.6498 10.3721 12.0656 11.4786 11.0057C13.762 8.817 13.762 5.25524 11.4786 3.06673C10.3721 2.00681 8.90178 1.42266 7.33741 1.42266C5.77304 1.42266 4.30271 2.00681 3.19617 3.06673C0.912778 5.25595 0.912778 8.81717 3.19617 11.0057Z" fill="white" class="path"/>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+      </div>
+      <div class="header-top__logo">
+        <a href="">Aurora</a>
+      </div>
+      <div class="header-top__search">
+        <form action="">
+          <div class="form-row">
+            <input type="text" class="form-row__input" id="searchFocus" placeholder="What are you looking for?">
+            <button type="submit" class="form-row__search">
+              <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" class="svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.33737 0C9.29817 0 11.1417 0.732088 12.5278 2.06084C15.2134 4.63432 15.3792 8.72258 13.0264 11.4835L16.4749 14.789C16.7648 15.0668 16.7648 15.5169 16.4749 15.7947C16.33 15.9337 16.1401 16.0031 15.9503 16.0031C15.7605 16.0031 15.5706 15.9337 15.4257 15.7947L11.9771 12.4892C10.6706 13.5144 9.0489 14.0721 7.33724 14.0721C5.37644 14.0721 3.53288 13.3401 2.14678 12.0113C-0.715576 9.26837 -0.715576 4.8044 2.14678 2.06075C3.53314 0.732106 5.37657 0 7.33737 0ZM3.19617 11.0057C4.30268 12.0663 5.77304 12.6498 7.33741 12.6498C8.90178 12.6498 10.3721 12.0656 11.4786 11.0057C13.762 8.817 13.762 5.25524 11.4786 3.06673C10.3721 2.00681 8.90178 1.42266 7.33741 1.42266C5.77304 1.42266 4.30271 2.00681 3.19617 3.06673C0.912778 5.25595 0.912778 8.81717 3.19617 11.0057Z"
+                  fill="white" class="path" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="header-top__user">
+        <div class="auth-buttons">
+          <a class="auth-buttons__login" href="">Sign in</a>
+          <span class="auth-buttons__line">|</span>
+          <a class="auth-buttons__reg" href="">Register</a>
         </div>
-        <div class="header-top__user">
-            <div class="auth-buttons">
-                <a class="auth-buttons__login" href="">Sign in</a>
-                <span class="auth-buttons__line">|</span>
-                <a class="auth-buttons__reg" href="">Register</a>
-            </div>
-            <a href="#!" class="user-cart">
-              <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8129 1.09091e-05C7.71709 0.00107728 6.66645 0.442131 5.89009 1.22729C5.11472 2.01245 4.67871 3.07781 4.67661 4.18885V6.229H1.31136C1.01402 6.229 0.773438 6.47296 0.773438 6.77446V20.7273C0.773438 22.5351 2.21911 24 4.00098 24H13.6247C15.4066 24 16.8522 22.5351 16.8522 20.7273V6.77446C16.8522 6.62957 16.7955 6.49106 16.6947 6.38879C16.5938 6.28652 16.4572 6.22899 16.3143 6.22899H12.9491V4.18884C12.947 3.07769 12.511 2.01233 11.7356 1.22728C10.9592 0.442121 9.90853 0.00106364 8.81278 0L8.8129 1.09091e-05ZM5.7524 4.18885C5.7524 2.4747 7.12243 1.08547 8.8129 1.08547C10.5034 1.08547 11.8734 2.4747 11.8734 4.18885V6.229H5.7524V4.18885ZM15.7766 7.31978V20.7271C15.7766 21.3056 15.5497 21.8606 15.1462 22.2697C14.7427 22.6788 14.1954 22.9089 13.6249 22.9089H4.00117C2.81289 22.9089 1.84947 21.932 1.84947 20.7271V7.31978H4.6768V10.2707C4.6768 10.5722 4.9174 10.8162 5.21473 10.8162C5.51101 10.8162 5.75265 10.5722 5.75265 10.2707V7.31978H11.8737V10.2707C11.8737 10.5722 12.1153 10.8162 12.4116 10.8162C12.709 10.8162 12.9495 10.5722 12.9495 10.2707V7.31978H15.7766Z" fill="white" class="path"/>
-            </a>
-        </div>
+        <a href="" class="user-cart">
+          <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.8129 1.09091e-05C7.71709 0.00107728 6.66645 0.442131 5.89009 1.22729C5.11472 2.01245 4.67871 3.07781 4.67661 4.18885V6.229H1.31136C1.01402 6.229 0.773438 6.47296 0.773438 6.77446V20.7273C0.773438 22.5351 2.21911 24 4.00098 24H13.6247C15.4066 24 16.8522 22.5351 16.8522 20.7273V6.77446C16.8522 6.62957 16.7955 6.49106 16.6947 6.38879C16.5938 6.28652 16.4572 6.22899 16.3143 6.22899H12.9491V4.18884C12.947 3.07769 12.511 2.01233 11.7356 1.22728C10.9592 0.442121 9.90853 0.00106364 8.81278 0L8.8129 1.09091e-05ZM5.7524 4.18885C5.7524 2.4747 7.12243 1.08547 8.8129 1.08547C10.5034 1.08547 11.8734 2.4747 11.8734 4.18885V6.229H5.7524V4.18885ZM15.7766 7.31978V20.7271C15.7766 21.3056 15.5497 21.8606 15.1462 22.2697C14.7427 22.6788 14.1954 22.9089 13.6249 22.9089H4.00117C2.81289 22.9089 1.84947 21.932 1.84947 20.7271V7.31978H4.6768V10.2707C4.6768 10.5722 4.9174 10.8162 5.21473 10.8162C5.51101 10.8162 5.75265 10.5722 5.75265 10.2707V7.31978H11.8737V10.2707C11.8737 10.5722 12.1153 10.8162 12.4116 10.8162C12.709 10.8162 12.9495 10.5722 12.9495 10.2707V7.31978H15.7766Z"
+              fill="white" class="path" />
+          </svg>
+        </a>
+      </div>
     </div>
     <div class="header-bottom">
-        <nav>
-            <ul class="menu">
-                <li class="menu__item"><a href="#!">what’s new</a></li>
-                <li class="menu__item"><a href="#!">women</a></li>
-                <li class="menu__item"><a href="#!">accessories</a></li>
-                <li class="menu__item"><a href="#!">kids</a></li>
-                <li class="menu__item"><a href="#!">beauty</a></li>
-                <li class="menu__item"><a href="#!">outlet</a></li>
-                <li class="menu__item"><a href="#!">stories</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a href="#!">what’s new</a></li>
+          <li class="menu__item"><a href="#!">women</a></li>
+          <li class="menu__item"><a href="#!">accessories</a></li>
+          <li class="menu__item"><a href="#!">kids</a></li>
+          <li class="menu__item"><a href="#!">beauty</a></li>
+          <li class="menu__item"><a href="#!">outlet</a></li>
+          <li class="menu__item"><a href="#!">stories</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
+  <section class="section1" id="section1">
+    <div class="mainSlider">
+      <div class="mainSlider__item" id="slide1" style="background-image: url('./img/Girl1.svg')">
+        <h2>
+          Hello! Welcome to Aurora
+        </h2>
+      </div>
+      <div class="mainSlider__item" id="slide2" style="background-image: url('./img/Girl_2.svg')">
+        <h2>
+          Hello! Welcome to Aurora
+        </h2>
+      </div>
+    </div>
+  </section>
+  <script src="//code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
